@@ -1,3 +1,5 @@
+// https://gobyexample.com/select
+
 package main
 
 import (
