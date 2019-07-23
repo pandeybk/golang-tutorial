@@ -1,3 +1,5 @@
+// https://gobyexample.com/channel-buffering
+
 package main
 
 import "fmt"

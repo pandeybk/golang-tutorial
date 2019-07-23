@@ -14,8 +14,8 @@ func Test1(t *testing.T) {
 		})
 
 		Convey("return sum of 2 integer", func() {
-			ret := add(2000000, 4000000)
-			So(ret, ShouldEqual, 6000000)
+			ret := add(2, 4)
+			So(ret, ShouldEqual, 6.0)
 		})
 	})
 }
