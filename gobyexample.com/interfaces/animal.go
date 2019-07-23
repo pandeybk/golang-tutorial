@@ -24,7 +24,7 @@ func (d Dog) Speak() string {
 	return "Woof!"
 }
 
-func (c Cat) Speak() string {
+func (c *Cat) Speak() string {
 	return "Meow!"
 }
 
@@ -42,7 +42,7 @@ func AnimalSounds(a Animal) {
 
 func main() {
 	dog := Dog{}
-	cat := Cat{}
+	cat := new(Cat)
 	llama := Llama{}
 	javaProgrammer := JavaProgrammer{}
 
@@ -51,7 +51,7 @@ func main() {
 	AnimalSounds(llama)
 	AnimalSounds(javaProgrammer)
 
-	animals := []Animal{Dog{}, Cat{}, Llama{}, JavaProgrammer{}}
+	animals := []Animal{Dog{}, new(Cat), Llama{}, JavaProgrammer{}}
 
 	for _, animal := range animals {
 		fmt.Println(animal.Speak())
