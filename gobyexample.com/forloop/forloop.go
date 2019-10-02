@@ -25,4 +25,20 @@ func main() {
 		fmt.Println(n)
 	}
 
+	println(sumIt(3, 5))
+	println(sumIt(5, 3))
+
+}
+
+func sumIt(a, b int) int {
+
+	if a > b {
+		a, b = b, a
+	}
+
+	sum := 0
+	for i := a; i <= b; i++ {
+		sum += i
+	}
+	return sum
 }
